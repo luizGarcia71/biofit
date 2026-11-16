@@ -1,0 +1,44 @@
+GYM CRM BIOFIT
+
+COMO USAR (mais simples)
+  Extraia o zip e de dois cliques em index.html. Funciona sem internet.
+
+COMO INSTALAR COMO APLICATIVO (Chrome ou Edge)
+  1. Windows: de dois cliques em iniciar.bat (precisa do Python).
+     Mac ou Linux: no terminal, rode  sh iniciar.sh
+  2. O navegador abre em http://localhost:8080
+  3. Clique no icone de instalar na barra de endereco (ou menu > Instalar Biofit).
+  Deixe a janela do iniciar aberta enquanto usar o sistema.
+  Para instalar no celular, publique esta pasta em uma hospedagem HTTPS
+  (Netlify, GitHub Pages, Cloudflare Pages) e use "Adicionar a tela inicial".
+
+PRIMEIRO ACESSO
+  Crie o e-mail e a senha do administrador. Ja existem os Treinos A, B e C,
+  cada um com 2 exercicios e animacao. Ao cadastrar um aluno, informe usuario e
+  senha para ele acessar o portal pelo botao "Sou aluno".
+
+ORGANIZACAO DOS ARQUIVOS
+  index.html          estrutura da pagina
+  css/style.css       aparencia (cores, layout)
+  js/base.js          estado, datas, valores e armazenamento
+  js/modal.js         janelas e formularios
+  js/acesso.js        login do administrador
+  js/regras.js        situacao, pagamentos, rotina e frequencia
+  js/midia.js         fotos e videos dos alunos
+  js/animacoes.js     animacoes dos exercicios
+  js/navegacao.js     troca de abas
+  js/telas/           uma tela por arquivo (painel, alunos, planos...)
+  js/portal-aluno.js  area do aluno
+  js/backup.js        backup e restauracao
+  js/main.js          inicializacao
+  sw.js               funcionamento offline
+  Ao alterar qualquer arquivo, aumente a versao no topo do sw.js
+  (ex.: biofit-v5 para biofit-v6) para os celulares atualizarem.
+  Ao criar um arquivo .js novo, adicione-o no index.html e na lista do sw.js.
+
+IMPORTANTE
+  - Os dados ficam no navegador e no endereco usados. Abrir por arquivo,
+    por localhost e por hospedagem sao bancos separados.
+  - Use o botao Backup para guardar ou mover os cadastros. Fotos e videos
+    dos alunos nao entram no backup.
+  - Nao ha envio para o Google Drive nesta versao.

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Gym CRM — Biofit</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#f26b1d" />
+    <link rel="icon" href="icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="auth"></div>
+    <div id="app" hidden>
+      <header>
+        <span class="logo">Bio<b>fit</b></span>
+        <nav>
+          <button class="tab" data-v="dash">Painel</button>
+          <button class="tab" data-v="alunos">Alunos</button>
+          <button class="tab" data-v="planos">Planos</button>
+          <button class="tab" data-v="pags">Pagamentos</button>
+          <button class="tab" data-v="treinos">Treinos</button>
+          <button class="tab" data-v="valid">Validação</button>
+          <button class="tab" data-v="rel">Relatórios</button>
+        </nav>
+        <button class="b g s" onclick="backup()">Backup</button>
+        <button class="b g s" onclick="logout()">Sair</button>
+      </header>
+      <main id="v"></main>
+    </div>
+    <div id="stu" hidden></div>
+    <dialog id="dlg"></dialog>
+    <div id="toast" role="status"></div>
+    <script src="js/base.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/acesso.js"></script>
+    <script src="js/regras.js"></script>
+    <script src="js/midia.js"></script>
+    <script src="js/animacoes.js"></script>
+    <script src="js/navegacao.js"></script>
+    <script src="js/telas/painel.js"></script>
+    <script src="js/telas/alunos.js"></script>
+    <script src="js/telas/planos.js"></script>
+    <script src="js/telas/pagamentos.js"></script>
+    <script src="js/telas/treinos.js"></script>
+    <script src="js/telas/historico.js"></script>
+    <script src="js/telas/relatorios.js"></script>
+    <script src="js/telas/validacao.js"></script>
+    <script src="js/portal-aluno.js"></script>
+    <script src="js/backup.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
